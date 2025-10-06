@@ -12,6 +12,6 @@ while (true)
     byte[] receivedBytes = udpClient.Receive(ref endpoint);
 
     var message = System.Text.Encoding.UTF8.GetString(receivedBytes);
-
+    
     Console.WriteLine(message);
 }
